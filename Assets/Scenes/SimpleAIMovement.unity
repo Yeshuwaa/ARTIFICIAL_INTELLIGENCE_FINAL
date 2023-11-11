@@ -395,7 +395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 225782783735851169, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_TagString
-      value: Team2
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 236990714873717631, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_Name
@@ -419,7 +419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2270253125654673392, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: targetTag
-      value: Team2
+      value: Team1
       objectReference: {fileID: 0}
     - target: {fileID: 2270253125654673392, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: aiModel.Array.size
@@ -427,7 +427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2270253125654673392, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: targets.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2270253125654673392, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: aiModel.Array.data[0]
@@ -448,7 +448,7 @@ PrefabInstance:
     - target: {fileID: 2270253125654673392, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: targets.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7520387441441649496}
     - target: {fileID: 2270253125654673392, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: targets.Array.data[1]
       value: 
@@ -463,7 +463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4724940993237832057, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_TagString
-      value: Team2
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4741495347617750752, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -507,7 +507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7621863079691026782, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_TagString
-      value: Team2
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8338469151239099397, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_IsActive
@@ -515,7 +515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8338469151239099397, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_TagString
-      value: Team2
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -919,7 +919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 225782783735851169, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_TagString
-      value: Team1
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 236990714873717631, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_Name
@@ -947,7 +947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2270253125654673392, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: targets.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2270253125654673392, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: aiModel.Array.data[0]
@@ -968,7 +968,7 @@ PrefabInstance:
     - target: {fileID: 2270253125654673392, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: targets.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1024679205}
     - target: {fileID: 2270253125654673392, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: targets.Array.data[1]
       value: 
@@ -983,7 +983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4724940993237832057, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_TagString
-      value: Team1
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4741495347617750752, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1027,7 +1027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7621863079691026782, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_TagString
-      value: Team1
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8338469151239099397, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_IsActive
@@ -1035,7 +1035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8338469151239099397, guid: dfc216633ae8a20429f3393775375cd9, type: 3}
       propertyPath: m_TagString
-      value: Team1
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

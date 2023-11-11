@@ -25,8 +25,9 @@ public class NewAiBehaviour : MonoBehaviour
     public string currentState;
     public AI_Types aiTypes;
 
-    [Header("Target")]
-    public Transform target;
+    [Header("Targets")]
+    public Transform[] targets;
+    [SerializeField] private string targetTag = "Team1";
 
     [Header("References")]
     public List<GameObject> aiModel;
@@ -82,6 +83,8 @@ public class NewAiBehaviour : MonoBehaviour
             default:
                 break;
         }
+
+        AssignTargetsByTag();
     }
 
     private void Update()
@@ -153,5 +156,26 @@ public class NewAiBehaviour : MonoBehaviour
             agent.enabled = false;
         }
         yield return null;
+    }
+
+    void AssignTargetsByTag()
+    {
+        GameObject[] targetObjects = GameObject.FindGameObjectsWithTag(targetTag);
+
+        if (targetObjects.Length > 0)
+        {
+            targets = new Transform[targetObjects.Length];
+
+            for (int i = 0; i < targetObjects.Length; i++)
+            {
+                targets[i] = targetObjects[i].transform;
+            }
+        }
+        else
+        {
+            Debug.LogWarning("No GameObjects found with the specified tag: " + targetTag);
+            // Optionally, set targets to an empty array or null if you want to handle it differently
+            targets = new Transform[0]; // or targets = null;
+        }
     }
 }

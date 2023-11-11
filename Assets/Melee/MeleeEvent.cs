@@ -20,14 +20,19 @@ public class MeleeEvent : MonoBehaviour
 
     public void SlashDamage()
     {
-        // Check if the NewAiBehaviour and target exist
-        if (newAiBehaviour != null && newAiBehaviour.target != null)
+        // Check if the NewAiBehaviour and targets array exist
+        if (newAiBehaviour != null && newAiBehaviour.targets != null)
         {
-            // Check if the target is within attack range
-            float distanceToTarget = Vector3.Distance(transform.position, newAiBehaviour.target.position);
-            if (distanceToTarget <= newAiBehaviour.range)
+            // Loop through all targets
+            for (int i = 0; i < newAiBehaviour.targets.Length; i++)
             {
-                newAiBehaviour.target.GetComponent<NewAiBehaviour>().TakeDamage(newAiBehaviour.damage);
+                // Check if the target is within attack range
+                float distanceToTarget = Vector3.Distance(transform.position, newAiBehaviour.targets[i].position);
+                if (distanceToTarget <= newAiBehaviour.range)
+                {
+                    // Apply damage to the current target
+                    newAiBehaviour.targets[i].GetComponent<NewAiBehaviour>().TakeDamage(newAiBehaviour.damage);
+                }
             }
         }
     }
