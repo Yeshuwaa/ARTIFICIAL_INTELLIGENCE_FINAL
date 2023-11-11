@@ -42,9 +42,13 @@ public class NewAiBehaviour : MonoBehaviour
     public float damage;
     public new string tag = "Team1";
 
-    [Header("VFX")]
+    [Header("Archer VFX")]
     public GameObject Arrow;
     public Transform spawnArcherFX;
+    
+    [Header("Mage VFX")]
+    public GameObject Spell;
+    public Transform spawnMageFX;
 
     private bool isDead = false;
     // Start is called before the first frame update
@@ -126,6 +130,13 @@ public class NewAiBehaviour : MonoBehaviour
             TakeDamage(GameManager.Instance.archerDamage);
             Destroy(other.gameObject);
         }
+
+        if (other.CompareTag("Spell"))
+        {
+            Debug.Log("Spell Hit!");
+            TakeDamage(GameManager.Instance.mageDamage);
+            Destroy(other.gameObject);
+        }
     }
 
     public void TakeDamage(float damageAmount)
@@ -139,6 +150,7 @@ public class NewAiBehaviour : MonoBehaviour
             animator.SetBool("isDead", true);
             animator.SetBool("isAttacking", false);
             StartCoroutine(OnDeadAnimationComplete());
+            
         }
     }
 
@@ -155,6 +167,9 @@ public class NewAiBehaviour : MonoBehaviour
         {
             agent.enabled = false;
         }
+
+        Destroy(gameObject);
+
         yield return null;
     }
 
@@ -174,8 +189,7 @@ public class NewAiBehaviour : MonoBehaviour
         else
         {
             Debug.LogWarning("No GameObjects found with the specified tag: " + targetTag);
-            // Optionally, set targets to an empty array or null if you want to handle it differently
-            targets = new Transform[0]; // or targets = null;
+            targets = new Transform[0];
         }
     }
 }

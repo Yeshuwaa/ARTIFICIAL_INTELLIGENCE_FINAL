@@ -8,8 +8,7 @@ TagManager:
   - Team1
   - Team2
   - Arrow
-  - Sword
-  - Katana
+  - Spell
   layers:
   - Default
   - TransparentFX
