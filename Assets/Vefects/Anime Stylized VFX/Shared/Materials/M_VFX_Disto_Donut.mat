@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_VFX_Disto_Donut
+  m_Shader: {fileID: 4800000, guid: 09989483303aedb459298959b2024af2, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DissolveMask:
+        m_Texture: {fileID: 2800000, guid: f5aba2dfe976c11499558e7dfdf6d7ef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 2800000, guid: f5aba2dfe976c11499558e7dfdf6d7ef, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _CameraDirPush: -40
+    - _CoreIntensity: 0
+    - _CorePower: 1
+    - _CustomPanSwitch: 0
+    - _Debug: 0
+    - _DissolveMaskInvert: 0
+    - _DissolveMaskRotation: 0
+    - _GlowIntensity: 1
+    - _StrDisto: 0.1
+    - _TextureRotation: 0
+    - __dirty: 0
+    m_Colors:
+    - _DissolveMaskChannel: {r: 0, g: 1, b: 0, a: 0}
+    - _DissolveMaskPanSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _TextureChannel: {r: 0, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
